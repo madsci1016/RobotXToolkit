@@ -121,7 +121,7 @@ class MyTCPHandler(SocketServer.StreamRequestHandler):
 					
 				#if you got here, message is good, time to act on it
 
-				if message['sentence_type'] == 'HRT':
+				if message['sentence_type'] == 'HRB':
 					parseHeartbeat(message)
 				elif message['sentence_type'] == 'COD':
 					parseLightTask(message)
